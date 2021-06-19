@@ -72,21 +72,3 @@ export const isAuthenticated = ()=>{
     }
 }
 
-
-export const makephone = (data)=>{
-    if(data){
-        let jwt=[]
-        if(typeof window == 'undefined'){
-            return false;
-        }
-        if(localStorage.getItem('jwt')){
-            jwt=JSON.parse(localStorage.getItem('jwt'));
-            jwt.user.veryfied_phone=true;
-            localStorage.setItem('jwt',JSON.stringify(jwt));
-            return true
-    
-        }else{
-            return false;
-        }
-    }
-}

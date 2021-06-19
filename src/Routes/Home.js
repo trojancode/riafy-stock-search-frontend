@@ -36,7 +36,7 @@ const Home = () => {
     }
 
     useEffect(() => {
-        if (searchText.length > 2) {
+        if (searchText.length > 1) {
             getRecomendations()
         } else {
             setSearchReco({ ...searchReco, data: [] })
@@ -89,7 +89,7 @@ const Home = () => {
                 </Row>
             </Div>
             <Div bg="mainBg" minH="calc(100% - 64px)" w="100%" textAlign="center" p={{ y: "15px", x: "15px" }}>
-                <Text textSize="titleCaption" maxW="600px" m={{ x: "auto", y: "15px" }} textWeight="600">The eisiest way to buy and sell stocks</Text>
+                <Text textSize="titleCaption" maxW="600px" m={{ x: "auto", y: "15px" }} textWeight="600">The easiest way to buy and sell stocks</Text>
                 <Text textSize="para" maxW="400px" m={{ x: "auto", y: "25px" }} >Stock analysis and screening tool for investors in india.</Text>
                 <Div m={{ x: "auto" }} pos="relative"
                     maxW="540px">
