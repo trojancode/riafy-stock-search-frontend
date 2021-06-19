@@ -28,14 +28,14 @@ const Login = () => {
 
     const redirectuser = () => {
         if (redirectToReferrer) {
-            if (user && user.role === "0") {
+            if (user) {
                 return <Redirect to='/'></Redirect>
             } else {
                 return <Redirect to='/login'></Redirect>
             }
         }
 
-        if (isAuthenticated()) {
+        if (user) {
             return <Redirect to='/'></Redirect>
         }
     }

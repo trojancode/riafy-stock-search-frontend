@@ -96,7 +96,9 @@ const Home = () => {
                     <Input
                         p={{ x: "3.5rem", y: "2rem", l: "3.5rem" }}
                         h="48px"
+                        rounded="xl"
                         border="0"
+                        placeholder="search.."
                         m={{ r: "0" }}
                         shadow="4"
                         textColor="danger900"

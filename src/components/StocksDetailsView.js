@@ -12,6 +12,9 @@ const StocksDetailsView = ({ data }) => {
         </Div>
     )
 
+    if(data.data.name ==undefined){
+        return (<div/>)
+    }
 
     if(data.isLoading){
         return (
